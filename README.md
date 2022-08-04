@@ -56,13 +56,13 @@ module "hetzner" {
 | basic\_auth\_user | The basic auth user name. | `string` | `""` | no |
 | domain | A public domain for the faasd instance. This will be consumed by Caddy and install a Let's Encrypt certificate. | `string` | `""` | no |
 | email | Email used to order a certificate from Let's Encrypt | `string` | `""` | no |
-| hcloud\_api\_key | API key for hetzner. | `string` | `""` | no |
-| location | The name of the location to deploy the faasd into. | `string` | `""` | no |
+| hcloud\_api\_key | API key for hetzner. | `string` | `""` | yes |
+| location | The name of the location to deploy the faasd into. | `string` | `""` | yes |
 | os_type | The name is to set the os_type. | `string` | `""` | yes |
 | server_type | The server type to use for the server. | `string` | `""` | yes |
 | name | The name of the faasd instance. | `string` | `""` | yes |
 | labels | A map of key/value labels. | `map` | `""` | yes |
-| port | Assign the port number and protocall to allow in Firewall Rules | `number` | `""` | no |
+| port | Assign the port number and protocall to allow in Firewall Rules | `number` | `""` | yes |
 | ssh_key_name | Key name of the Key Pair to use for the instance. | `string` | `""` | yes |
 | ssh_pub_key | Public Key Pair to use for the instance. | `string` | `""` | yes |
 | volume_name | The name of the volume. | `string` | `""` | yes |
