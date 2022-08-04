@@ -16,7 +16,7 @@ This repository defines a [Terraform module](https://www.terraform.io/docs/modul
 code by adding a `module` configuration and setting its `source` parameter to URL of this repository:
 
 ```hcl
-module "hetner" {
+module "hetzner" {
   source = "https://github.com/itTrident/terraform-hetzner-faasd"
   name   = "hetzner"
 }
